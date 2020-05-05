@@ -1,0 +1,70 @@
+<div class="toolbar" role="banner">
+    <img width="40" alt="DACS Logo" src="../assets/img/DACS.png"/>
+    <span class="companytitle">Bank Ops Dashboard</span>
+      <div class="spacer"></div>
+  </div>
+  <div class="content" role="main">
+  </div>
+<div class="signup-form">
+    <form [formGroup]="signupForm" (ngSubmit)="SignupSubmit(signupForm)">
+		<h2>Register</h2>
+		<p class="hint-text">Create your account. It's free and only takes a minutes.</p>
+        <div class="form-group">
+			<div class="row">
+				<div class="col-md-6"><input type="text"  formControlName="firstName"  class="form-control" name="firstName" placeholder="First Name" required="required"></div>
+				<div class="col-md-6"><input type="text"  formControlName="lastName"  class="form-control" name="lastName" placeholder="Last Name" required="required"></div>
+            </div>
+            <div *ngIf="((f.firstName.dirty || f.firstName.touched) && f.firstName.invalid)" class="alert alert-danger">
+                <div *ngIf="f.firstName.errors.required">First Name is required.</div>
+                <div *ngIf="f.firstName.errors.minlength">First Name should be 2 character.</div>
+            </div>
+            <div *ngIf="(f.lastName.touched && f.lastName.invalid)" class="alert alert-danger">
+                <div *ngIf="f.lastName.errors.required">Last Name is required.</div>
+                <div *ngIf="f.lastName.errors.minlength">Last Name should be 2 character.</div>
+            </div>        	
+        </div>
+        <div class="form-group">
+            <input type="email" #emailid formControlName="emailid" maxlength="10"  class="form-control" name="emailid" placeholder="Email Id" required="required">
+            <div *ngIf="(f.emailid.touched && f.emailid.invalid)" class="alert alert-danger">
+                <div *ngIf="f.emailid.errors.required">Email is required.</div>
+                
+            </div>
+        </div>
+		<div class="form-group">
+            <input type="password"  formControlName="password"  class="form-control" name="password" placeholder="Password" required="required">
+            <div *ngIf="(f.password.touched && f.password.invalid)" class="alert alert-danger">
+                <div *ngIf="f.password.errors.required">Password is required.</div>
+                <div *ngIf="f.password.errors.minlength">Password should be 2 characters.</div>
+            </div>
+        </div>
+        <div class="form-group row"> 
+            <div class="col-md-3">Gender:</div>
+            <div class="col-md-4">
+                <label class="radio-inline">
+                    <input type="radio"  formControlName="gender" name="gender" id="Male" value="0">
+                        Female
+                </label>
+            </div> 
+            <div class="col-md-3">
+                <label class="radio-inline">
+                    <input type="radio"  formControlName="gender" name="gender" id="Female" value="1">
+                        Male
+                </label>
+            </div>
+            <div *ngIf="(f.gender.touched && f.gender.invalid)" class="alert alert-danger">
+                <div *ngIf="f.gender.errors.required">Gender is required.</div>
+            </div>
+        </div>        
+        <div class="form-group">
+			<label class="checkbox-inline">
+                <input type="checkbox" formControlName="termsandconditions" name="termsandconditions"  required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                <div *ngIf="(f.termsandconditions.touched && f.termsandconditions.invalid) || submitted" class="alert alert-danger">
+                    <div *ngIf="f.termsandconditions.errors.required">Terms and Conditions must be accepted.</div>
+                </div>
+        </div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+        </div>
+    </form>
+	<div class="text-center">Already have an account? <a href="/Login">Log in</a></div>
+</div>

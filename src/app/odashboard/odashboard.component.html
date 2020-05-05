@@ -1,0 +1,707 @@
+<div class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+  <div class="wrapper">
+
+    <!-- Operator Dashboard header managers from appheader component. -->
+    <app-opheader></app-opheader>
+
+    <!--Import Operator Legend Panel here #legendpanel Starts here-->
+    <app-oplegend></app-oplegend>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Dormant Account Processing Dashboard</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="/ODashboard">Home</a></li>
+                <li class="breadcrumb-item active">Bank Operator Dashboard</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <!-- Info boxes -->
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="info-box">
+                <span class="info-box-icon bg-info elevation-1"><i class="fa fa-th-list"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Total Dormants Accounts</span>
+                  <span class="info-box-number">
+                    2850
+                    <small></small>
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="info-box mb-3">
+                <span class="info-box-icon bg-danger elevation-1"><i class="fa fa-thumbs-up"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Assigned to me</span>
+                  <span class="info-box-number">230</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+
+            <!-- fix for small devices only -->
+            <div class="clearfix hidden-md-up"></div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="info-box mb-3">
+                <span class="info-box-icon bg-success elevation-1"><i class="fa fa-reply"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Follow-ups Taken By me</span>
+                  <span class="info-box-number">127</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="info-box mb-3">
+                <span class="info-box-icon bg-warning elevation-1"><i class="fa fa-users"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Customers retained by me</span>
+                  <span class="info-box-number">97</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                  <p class="text-center">
+                    <strong>Account Retention Reasons (Top 4)</strong>
+                  </p>
+  
+                  <div class="progress-group">
+                    Good Services and Features
+                    <span class="float-right"><b>50</b>/100</span>
+                    <div class="progress progress-sm">
+                      <div class="progress-bar bg-primary" style="width: 50%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+  
+                  <div class="progress-group">
+                    Happy With Customer Relationship 
+                    <span class="float-right"><b>30</b>/100</span>
+                    <div class="progress progress-sm">
+                      <div class="progress-bar bg-danger" style="width: 30%"></div>
+                    </div>
+                  </div>
+  
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">Minimum Foreign Trasaction Fee</span>
+                    <span class="float-right"><b>20</b>/100</span>
+                    <div class="progress progress-sm">
+                      <div class="progress-bar bg-success" style="width: 20%"></div>
+                    </div>
+                  </div>
+  
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    Overall Experience
+                    <span class="float-right"><b>10</b>/100</span>
+                    <div class="progress progress-sm">
+                      <div class="progress-bar bg-warning" style="width: 10%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                </div>
+                <!-- /.col -->
+              <!-- /.col -->
+              <div class="col-md-6">
+                <p class="text-center">
+                  <strong>Account Closure Reasons (Top 4)</strong>
+                </p>
+
+                <div class="progress-group">
+                  Lack of ATMs and Branches
+                  <span class="float-right"><b>35</b>/100</span>
+                  <div class="progress progress-sm">
+                    <div class="progress-bar bg-primary" style="width: 35%"></div>
+                  </div>
+                </div>
+                <!-- /.progress-group -->
+
+                <div class="progress-group">
+                  Poor Customer Service
+                  <span class="float-right"><b>20</b>/100</span>
+                  <div class="progress progress-sm">
+                    <div class="progress-bar bg-danger" style="width: 20%"></div>
+                  </div>
+                </div>
+
+                <!-- /.progress-group -->
+                <div class="progress-group">
+                  <span class="progress-text">Easy to Invest Idle Cash</span>
+                  <span class="float-right"><b>10</b>/100</span>
+                  <div class="progress progress-sm">
+                    <div class="progress-bar bg-success" style="width: 10%"></div>
+                  </div>
+                </div>
+
+                <!-- /.progress-group -->
+                <div class="progress-group">
+                  High Account Maintenance 
+                  <span class="float-right"><b>5</b>/100</span>
+                  <div class="progress progress-sm">
+                    <div class="progress-bar bg-warning" style="width: 5%"></div>
+                  </div>
+                </div>
+                <!-- /.progress-group -->
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- ./card-body -->
+          <!-- Main row -->
+          <div class="row">
+            <!-- Left col -->
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header border-transparent">
+                  <h3 class="card-title">Recently worked on</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <div class="table-responsive">
+                    <table class="table m-0">
+                      <thead>
+                        <tr>
+                          <th>Account ID</th>
+                          <th>State</th>
+                          <th>Status</th>
+                          <th>Last Transaction Date</th>
+                          <th>Assigned to</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="/Profile">5264872569</a></td>
+                          <td>California, LA</td>
+                          <td><b class="text-success">Checklist Pending</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">2020-04-24 18:57:59</div>
+                          </td>
+                          <td>Patange, Amit</td>
+                        </tr>
+                        <tr>
+                          <td><a href="/Profile">5264872570</a></td>
+                          <td>Arizona, Phenoix</td>
+                          <td><b class="text-info">New</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f39c12" data-height="20">2020-04-24 16:52:34</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="/Profile">5264872571</a></td>
+                          <td>New York</td>
+                          <td><b class="text-danger">Ready
+                              to activate</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f56954" data-height="20">2020-04-24 12:41:21</div>
+                          </td>
+                          <td>Patange, Amit</td>
+                        </tr>
+                        <tr>
+                          <td><a href="/Profile">5264872572</a></td>
+                          <td>Washington DC</td>
+                          <td><b class="text-info">New</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00c0ef" data-height="20">2020-04-24 10:58:14</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="/Profile">5264872573</a></td>
+                          <td>Seatle, WA</td>
+                          <td><b class="text-warning">On-Hold</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f39c12" data-height="20">2020-04-23 17:42:30</div>
+                          </td>
+                          <td>Patange, Amit</td>
+                        </tr>
+                        <tr>
+                          <td><a href="/Profile">5264872574</a></td>
+                          <td>New Jersy</td>
+                          <td><b class="text-info">New</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f56954" data-height="20">2020-04-23 16:52:34</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="/Profile">5264872575</a></td>
+                          <td>Oklahoma</td>
+                          <td><b class="text-success">Sent for approval</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">2020-04-23 11:12:44</div>
+                          </td>
+                          <td>Patange, Amit</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer clearfix">
+                  <!--<a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Assign 5 Random</a>-->
+                  <a href="/Assigned" class="btn btn-sm btn-secondary float-right">View All</a>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+
+              <!-- TABLE: LATEST ORDERS -->
+              <div class="card collapsed-card">
+                <div class="card-header border-transparent">
+                  <h3 class="card-title">New Dormant Accounts</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <div class="table-responsive">
+                    <table class="table m-0">
+                      <thead>
+                        <tr>
+                          <th>Account ID</th>
+                          <th>Customer Name</th>
+                          <th>State</th>                          
+                          <th>Last Transaction Date</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872569</a></td>
+                          <td>Kothvade, Sachin</td>
+                          <td>California, LA</td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">2020-04-24 16:52:34</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872570</a></td>
+                          <td>Kadam, Komal</td>
+                          <td>Arizona, Phenoix</td>
+                          <td>
+                            <div class="sparkbar" data-color="#f39c12" data-height="20">2020-04-24 10:58:14</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872571</a></td>
+                          <td>Gupta, Tanishq</td>
+                          <td>New York</td>
+                          <td>
+                            <div class="sparkbar" data-color="#f56954" data-height="20">2020-04-23 16:52:34</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872572</a></td>
+                          <td>Patil, Sachin</td>
+                          <td>Washington DC</td>
+                          <td>
+                            <div class="sparkbar" data-color="#00c0ef" data-height="20">2020-04-23 12:34:56</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872573</a></td>
+                          <td>M, Mahesh</td>
+                          <td>Seatle, WA</td>
+                          <td>
+                            <div class="sparkbar" data-color="#f39c12" data-height="20">2020-04-23 09:48:29</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872574</a></td>
+                          <td>Patil, Tushar</td>
+                          <td>New Jersy</td>
+                          <td>
+                            <div class="sparkbar" data-color="#f56954" data-height="20">2020-04-22 20:05:24</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872575</a></td>
+                          <td>Apte, Ankush</td>
+                          <td>Oklahoma</td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">2020-04-22 19:12:00</div>
+                          </td>
+                          <td><a class="btn btn-primary btn-sm" href="javascript:void(0)">
+                            <i class="fa fa-user"></i> &nbsp;Assign to me</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer clearfix">
+                  <a href="javascript:void(0)" class="btn btn-sm btn-primary float-left">Assign 5 Random</a>
+                  <a href="/Dormants" class="btn btn-sm btn-secondary float-right">View All</a>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+
+              <div class="card collapsed-card">
+                <div class="card-header border-transparent">
+                  <h3 class="card-title">Accounts Assigned to me</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <div class="table-responsive">
+                    <table class="table m-0">
+                      <thead>
+                        <tr>
+                          <th>Account ID</th>
+                          <th>State</th>
+                          <th>Status</th>
+                          <th>Last Transaction Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872569</a></td>
+                          <td>California, LA</td>
+                          <td><b class="text-success">Checklist Pending</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">2020-04-24 18:57:59</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872570</a></td>
+                          <td>Arizona, Phenoix</td>
+                          <td><b class="text-warning">On-Hold</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f39c12" data-height="20">2020-04-24 12:41:21</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872571</a></td>
+                          <td>New York</td>
+                          <td><b class="text-danger">Ready to activate</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f56954" data-height="20">2020-04-23 17:42:30</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872572</a></td>
+                          <td>Washington DC</td>
+                          <td><b class="text-info">New</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00c0ef" data-height="20">2020-04-23 11:12:44</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872573</a></td>
+                          <td>Seatle, WA</td>
+                          <td><b class="text-warning">On-Hold</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f39c12" data-height="20">2020-04-23 08:19:51</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872574</a></td>
+                          <td>New Jersy</td>
+                          <td><b class="text-danger">Ready to activate</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f56954" data-height="20">2020-04-22 21:02:59</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872575</a></td>
+                          <td>Oklahoma</td>
+                          <td><b class="text-success">Ready for Closure</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">2020-04-22 17:43:18</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer clearfix">
+                  <!--<a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Assign 5 Random</a>-->
+                  <a href="/Assigned" class="btn btn-sm btn-secondary float-right">View All</a>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+
+              <div class="card collapsed-card">
+                <div class="card-header border-transparent">
+                  <h3 class="card-title">Accounts Requiring Follow-ups</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <div class="table-responsive">
+                    <table class="table m-0">
+                      <thead>
+                        <tr>
+                          <th>Account ID</th>
+                          <th>State</th>
+                          <th>Status</th>
+                          <th>Last Transaction Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872569</a></td>
+                          <td>California, LA</td>
+                          <td><b class="text-success">Checklist Pending</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">2020-04-24 18:57:59</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872570</a></td>
+                          <td>Arizona, Phenoix</td>
+                          <td><b class="text-warning">On-Hold</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f39c12" data-height="20">2020-04-24 12:41:21</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872571</a></td>
+                          <td>New York</td>
+                          <td><b class="text-danger">Ready to activate</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f56954" data-height="20">2020-04-23 17:42:30</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872572</a></td>
+                          <td>Washington DC</td>
+                          <td><b class="text-info">New</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00c0ef" data-height="20">2020-04-23 11:12:44</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872573</a></td>
+                          <td>Seatle, WA</td>
+                          <td><b class="text-warning">On-Hold</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f39c12" data-height="20">2020-04-23 08:19:51</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872574</a></td>
+                          <td>New Jersy</td>
+                          <td><b class="text-danger">Ready to activate</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#f56954" data-height="20">2020-04-22 21:02:59</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="javascript:void(0)">5264872575</a></td>
+                          <td>Oklahoma</td>
+                          <td><b class="text-success">Ready for Closure</b></td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">2020-04-22 17:43:18</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer clearfix">
+                  <!--<a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Assign 5 Random</a>-->
+                  <a href="/Followups" class="btn btn-sm btn-secondary float-right">View All</a>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-4">
+              <!-- Info Boxes Style 2 -->
+              <div class="info-box mb-3 bg-warning">
+                <span class="info-box-icon"><i class="fa fa-tag"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Follow-ups required</span>
+                  <span class="info-box-number">12</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+              <div class="info-box mb-3 bg-success">
+                <span class="info-box-icon"><i class="fa fa-heart"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Favourites</span>
+                  <span class="info-box-number">27</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+              <div class="info-box mb-3 bg-danger">
+                <span class="info-box-icon"><i class="fa fa-money"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Transactions</span>
+                  <span class="info-box-number">97</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+              <div class="info-box mb-3 bg-info">
+                <span class="info-box-icon"><i class="fa fa-comment"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Reviewer Approved</span>
+                  <span class="info-box-number">15</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div style="display: block;">
+                    <canvas baseChart 
+                      [data]="pieChartData" 
+                      [labels]="pieChartLabels" 
+                      [chartType]="pieChartType"
+                      [options]="pieChartOptions"
+                      [plugins]="pieChartPlugins"
+                      [legend]="pieChartLegend">
+                    </canvas>
+                  </div>
+                </div>
+              </div>
+              <br/>
+              <div class="row">
+                <div class="col-12">
+                  <div class="info-box mb-3" style="text-align: center;">
+                    <div class="info-box-content">
+                      <span class="info-box-text" style="top: 12px;position: relative;"><h5>Dormant Account Status wise - Pie Chart</h5></span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+              </div>
+
+
+              <!-- /.info-box -->
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+
+
+          <!-- /.row -->
+        </div>
+        <!--/. container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <app-opfooter></app-opfooter>
+  </div>
+</div>
+<!-- ./wrapper -->
