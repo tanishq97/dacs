@@ -61,7 +61,7 @@ export class OplegendComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.getOperatorInfo();
+    // this.getOperatorInfo();
   }
 
   getOperatorInfo() {

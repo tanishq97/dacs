@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.loginForm = this._FormBuilder.group({
       username: new FormControl('', [Validators.required]),
-      password: new FormControl('', [Validators.required, Validators.minLength(6)])
+      password: new FormControl('', [Validators.required])
     },
     { updateOn: "blur" });
   }
@@ -44,35 +44,36 @@ export class LoginComponent implements OnInit {
     if(this.loginForm.valid)
     {
       let loginCreds = { username : this.loginForm.value.username, password : this.loginForm.value.password};
-      this._AuthService.LoginVerifyPostCall(loginCreds)
-          .subscribe(response => {
-            if(response.responseobj.loginstatus)
-            {
-                this._SessionHelper.SetSessionStorage(
-                        this._SessionHelper.TokenKey, 
-                        response.responseobj.token);
-                this._Router.navigateByUrl('/ODashboard');
-                this.loginForm.reset();
+      this._Router.navigateByUrl('/ODashboard');
+      // this._AuthService.LoginVerifyPostCall(loginCreds)
+      //     .subscribe(response => {
+      //       if(response.responseobj.loginstatus)
+      //       {
+      //           this._SessionHelper.SetSessionStorage(
+      //                   this._SessionHelper.TokenKey, 
+      //                   response.responseobj.token);
+      //           this._Router.navigateByUrl('/ODashboard');
+      //           this.loginForm.reset();
 
                   // this._Talk.Success(new TalkParam({
                   //   Title: "Good job!", 
                   //   Text:"Login Successful.", 
                   //   Icon: "success", 
                   //   ConfirmButtonText:"Proceed"}));
-            }
-            else{
-              // this._Talk.Failure(new TalkParam({
-              //   Title: "Login Failed!", 
-              //   Text:"Please try with correct login credentials.", 
-              //   Icon: "error", 
-              //   ConfirmButtonText:"Ok"}));
-              this.loginForm.reset();
-            }
+          //   }
+          //   else{
+          //     // this._Talk.Failure(new TalkParam({
+          //     //   Title: "Login Failed!", 
+          //     //   Text:"Please try with correct login credentials.", 
+          //     //   Icon: "error", 
+          //     //   ConfirmButtonText:"Ok"}));
+          //     this.loginForm.reset();
+          //   }
 
-          }, error => {
-              console.log("Error "+error);
-              this.loginForm.reset();
-          });
+          // }, error => {
+          //     console.log("Error "+error);
+          //     this.loginForm.reset();
+          // });
 
           
     }
